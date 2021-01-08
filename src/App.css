@@ -1,38 +1,104 @@
-.App {
-  text-align: center;
+@import url("https://fonts.googleapis.com/css2?family=Titillium+Web:wght@300;400;600;700&display=swap");
+
+* {
+  font-family: "Titillium Web", sans-serif;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+body {
+  margin: 0;
+  padding: 0;
   display: flex;
-  flex-direction: column;
-  align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  font-family: "Titillium Web", sans-serif;
+  background: rgb(41, 41, 41);
 }
 
-.App-link {
-  color: #61dafb;
+.displayWindow {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 470px;
+  height: 170px;
+  margin-top: 60px;
+  margin-bottom: 30px;
+  font-size: 28px;
+  border: 1px solid black;
+  background: rgb(54, 148, 112);
+  border-radius: 0.2em;
+  color: rgb(255, 255, 255);
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+input,
+select {
+  margin: auto;
+  display: block;
+  width: 470px;
+  padding: 20px;
+  background: rgb(54, 148, 112);
+  color: rgb(255, 255, 255);
+  font-size: 20px;
+  font-family: "Titillium Web", sans-serif;
+}
+
+input {
+  width: 426px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.btnconvert {
+  width: 300px;
+  padding: 14px;
+  float: left;
+  margin-top: 20px;
+  font-size: 18px;
+  background: linear-gradient(to right, rgb(69, 233, 96), rgb(43, 216, 150));
+  font-weight: 700;
+}
+
+.btnswitch {
+  width: 80px;
+  padding: 16px;
+  float: right;
+  margin-top: 20px;
+  background-color: rgb(43, 216, 150);
+}
+
+.fas.fa-arrow-down,
+.fas.fa-arrow-up {
+  font-size: 20px;
+}
+
+.fas.fa-arrow-down {
+  padding-right: 5px;
+}
+
+@media screen and (max-width: 600px) {
+  .displayWindow {
+    width: 300px;
+    margin: auto;
+    margin-top: 50px;
+    margin-bottom: 30px;
   }
-  to {
-    transform: rotate(360deg);
+
+  input,
+  select {
+    margin: auto;
+    width: 300px;
+  }
+
+  input {
+    width: 260px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+
+  .btnconvert {
+    width: 200px;
+  }
+
+  .btnswitch {
+    width: 80px;
+    margin-top: 20px;
   }
 }
